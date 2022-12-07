@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do usuário</title>
+    <link rel="stylesheet" href="../assets/css/login-user.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form-image">
+            <img src="../assets/imagens/undraw_barber_-3-uel.svg" alt="">
+            <a href="../index.html">
+                <- Voltar para página inicial</a>
+        </div>
+        <div class="form">
+            <form method="post">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Faça login para continuar</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label>Usuário</label>
+                        <input type="text" name="usuario" placeholder="Digite seu usuario">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Senha</label>
+                        <input type="password" name="senha" placeholder="Digite sua senha">
+                    </div>
+
+                </div>
+
+                <div class="login-button">
+                    <input type="button" name="login" id="entrar" value="Entrar">
+                    <p>Não tem uma conta? <a href="cadastro.html">Registre-se</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    const button = document.getElementById('entrar')
+    button.addEventListener('click', function(){
+        alert('O login não funciona por ser um prototipo de demonstração, você será redirecionado para a página de marcação de horários!')
+        window.location = href = 'marcacao.html'
+    } )
+</script>
+
+</html>

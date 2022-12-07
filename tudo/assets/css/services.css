@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li .nav-link{
+    font-size: 1.2rem;
+}
+
+.logo-img {
+    width: 7rem;
+}
+
+/*Configuraçôes do conteudo de serviços da pagina*/
+
+.services {
+    width: 100%;
+    display: flex;
+    padding: 4rem;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.servicesDescription {
+    text-align: center;
+}
+
+.servicesDescription h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #808080;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.servicesDescription h1 {
+    color:#42434b;;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.card-services {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 23%;
+    margin-right: 1.5%;
+    background-color: #ffffff;
+}
+
+.card-img1 {
+    background-image: url(../imagens/image-card1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img2 {
+    background-image: url(../imagens/image-card2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img3 {
+    background-image: url(../imagens/image-card3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img4 {
+    background-image: url(../imagens/card-image4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mr-card {
+    margin-right: 0;
+}
+
+.card-button {
+    text-decoration: none;
+    color: #111111;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 15px 30px;
+    margin: 0 auto;
+    cursor:pointer;
+}
+
+.card-button:hover {
+    background-color: #a0c6b9;
+    color: #ffffff;
+}
+
+.prices {
+    width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 4rem;
+}
+
+.pricesDescription {    
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+}
+
+.priceWrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.priceItems {
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 49%;
+    color: #000000;
+    height: 90px;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+    margin-bottom: 1rem; 
+}
+
+.priceItems h5 {
+    color: gray;
+}
+
+/*Seção contato da página*/
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    justify-content: space-around;
+    padding: 6rem 0;
+    width: 100%;
+}
+
+.contacts-item {
+    display: flex;
+    width: 32%;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.contacts-item h4 {
+    line-height: 1.2;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: #42434b;
+}
+
+.fa-location-dot, .fa-mobile-screen-button, .fa-envelope {
+    align-self: center;
+    font-size: 2rem;
+}
+
+/*Footer da página*/
+
+#footer {
+    display: flex;
+    padding-top: 1rem;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+}
+
+#footer p {
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+#footer a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+#footer a:hover {
+    color: #808080;
+}
+
+/*Media query*/
+
+
+@media (max-width: 1144px) {
+    
+    .services-cards {
+        margin: 0 auto;
+        height: auto;
+    }
+    .card-services {
+        width: 100%;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .priceItems {   
+        width: 100%;
+    }
+}
+
+@media (max-width: 596px) {
+
+    .contacts-item {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 437px) {
+
+    .prices {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 365px) {
+
+    .prices {
+        padding: 0.1rem;
+    }
+
+    .services {
+        padding: 1rem 2rem;
+    }
+}
+
+
+
+

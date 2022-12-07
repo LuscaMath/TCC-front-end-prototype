@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/horarios.css">
+
+    <title>Agendamento</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-image">
+            <img src="../assets/imagens/j11bvEKI.png" alt="">
+            
+                 <h3>Bem vindo</h3>
+                <br><a href="index.html">Logout</a>
+        
+        </div>
+        <div class="form">
+            <form method="post">
+                <div class="form-header">
+                    <div class="hoursWrapper">
+                        <h3>Horários disponibilizados de segunda a sábado</h3>
+                        <span>09:00|10:00|11:00|14:00|15:00|16:00|17:00</span>
+                    </div>
+                    <div class="title">
+                        <h1>Agende um horário</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input style="display:none;" type="text" name="usuario" disabled>
+                        <label>Nome</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Data</label>
+                        <input type="date" class="form-control" name="data" id="inputData">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Hora</label>
+                        <input type="time" class="form-control" name="hora" placeholder="--:--" id="inputHora">
+                    </div>
+
+                </div>
+
+                <div class="login-button">
+                    <input type="button" value="Enviar" class="btn btn-primary" name="acao" id="action"></input>
+                    <input type="hidden" name="form" value="f_form">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    </div>
+</body>
+<script>
+    const button = document.getElementById('action')
+    button.addEventListener('click', function(){
+        alert('A marcação de horários não funciona por ser um prototipo de demonstração, você será redirecionado para a página inicial!')
+        window.location = href = 'index.html'
+    } )
+</script>
+</html>

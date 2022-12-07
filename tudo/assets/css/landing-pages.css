@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+/*Configuraçôes gerais da pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    background: url(../imagens/barber-shop-g4cb39862b_1920.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#content-container {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    flex: 1 0 auto;
+}
+/*Configuraçôes do cabeçalho da pagina*/
+
+.logo-img {
+    width: 7rem;
+}
+
+ul li .nav-link{
+    font-size: 1.2rem;
+}
+
+/*Configuraçôes do conteudo principal da pagina*/
+
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;   
+}
+
+.imagemContent {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    align-self: center;
+    width: 75%;
+    height: 300px;
+}
+
+.teste h2 {
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    justify-content: center;
+    width: 100%;
+    text-align: center; 
+    margin-top: 0.5rem;
+}
+
+/*Seção contato da página*/
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    justify-content: space-around;
+    padding: 6rem 0;
+    width: 100%;
+}
+
+.contacts-item {
+    display: flex;
+    width: 32%;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.contacts-item h4 {
+    line-height: 1.2;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: #42434b;
+}
+
+.fa-location-dot, .fa-mobile-screen-button, .fa-envelope {
+    align-self: center;
+    font-size: 2rem;
+}
+
+/*Footer da página*/
+
+#footer {
+    display: flex;
+    padding-top: 1rem;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+}
+
+#footer p {
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+#footer a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+#footer a:hover {
+    color: #808080;
+}
+
+/*Media query*/
+
+
+@media (max-width: 991.98px) {
+
+    .teste h2 {
+        font-size: 2.2rem;
+    }
+    
+    #header {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 596px) {
+    
+    .imagemContent {
+        width: 100%;
+    }
+
+    .contacts-item {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .footer-text-items {
+        width: 100%;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .teste h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .teste h2 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
