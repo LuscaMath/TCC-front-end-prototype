@@ -206,11 +206,21 @@ body {
     .hoursWrapper {
         font-size: 70%;
     }
-}   
+}
+
+@media screen and (max-width: 402px) {
+    .login-button input {
+        width: 35%;
+    }
+}
 
 @media screen and (max-width: 360px) {
     .container {
         width: 100%;
         padding: 1rem;
     } 
+
+    .hoursWrapper {
+        font-size: 60%;
+    }
 }

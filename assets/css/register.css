@@ -69,16 +69,17 @@ body {
     border: none;
     width: 20%;
     background-color:#6c63ff;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .login-button input:hover {
     background-color: #c0c0c0;
-}
+}   
 
 .login-button input {
+    text-align: center;
     font-weight: 500;
     color: #fff;
 }
